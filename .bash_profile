@@ -7,8 +7,8 @@ alias lal='ll -a'
 alias lla='ll -a'
 alias cl='clear'
 alias rm='rm -i'
-alias osu='open -a /Applications/Sublime\ Text\ 2.app/'
-alias omu='open -a /Applications/Mou.app/'
+alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
+alias mou='open -a /Applications/Mou.app/'
 
 ####################################
 ### path ###########################
