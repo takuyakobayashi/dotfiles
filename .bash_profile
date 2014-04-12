@@ -29,13 +29,7 @@ eval "$(rbenv init -)"
 ####################################
 ### mac ports ######################
 ####################################
-##
-# Your previous /Users/kobayashi_ta/.bash_profile file was backed up
-# as /Users/kobayashi_ta/.bash_profile.macports-saved_2012-11-19_at_14:17:21
-##
-# MacPorts Installer addition on 2012-11-19_at_14:17:21: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
 ####################################
 ### Git ############################
