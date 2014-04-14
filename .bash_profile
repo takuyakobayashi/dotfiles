@@ -17,15 +17,6 @@ alias mou='open -a /Applications/Mou.app/'
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
-# !!! it is environment-dependent !!!
-## Android For Xamarin
-# export JAVA_HOME=`/usr/libexec/java_home`
-# export PATH=$PATH:$JAVA_HOME/bin
-# export ANDROID_HOME=$HOME/Library/developer/xamarin/android-sdk-mac_x86
-# export PATH=$PATH:$ANDROID_HOME/platform-tools
-# export PATH=$PATH:$ANDROID_HOME/tools
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 ####################################
 ### mac ports ######################
 ####################################
@@ -34,12 +25,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib:$PATH
 ####################################
 ### Git ############################
 ####################################
-
-# !!! it is environment-dependent !!!
-# export PATH=/usr/local/git/bin:$PATH
-# source /usr/local/git/contrib/completion/git-completion.bash
-# source /usr/local/git/contrib/completion/git-prompt.sh
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 GIT_PS1_SHOWDIRTYSTATE=true
 
 ####################################
