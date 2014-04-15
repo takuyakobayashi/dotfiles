@@ -20,3 +20,10 @@
 (tool-bar-mode 0)
 ;; hide scrollbar
 (toggle-scroll-bar nil)
+;; set backup directory
+(setq backup-directory-alist
+  (cons (cons ".*" (expand-file-name "~/dotfiles/.emacs.d/backup/"))
+        backup-directory-alist))
+;; set auto save directory
+(setq auto-save-file-name-transforms
+  `((".*", (expand-file-name "~/dotfiles/.emacs.d/auto-save-list/") t)))

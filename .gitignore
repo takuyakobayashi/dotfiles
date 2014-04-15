@@ -1,3 +1,5 @@
 *.DS_Store
 */elisp/*
 */auto-save-list/*
+*/backup/*
+*/ac-comphist.dat
