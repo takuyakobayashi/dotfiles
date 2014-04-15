@@ -9,6 +9,7 @@ alias cl='clear'
 alias rm='rm -i'
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
+alias em='open -a /Applications/Emacs.app/'
 
 ####################################
 ### path ###########################

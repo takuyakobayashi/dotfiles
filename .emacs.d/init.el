@@ -1,6 +1,6 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; load-path ;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;-----------------------------
+;; load-path ------------------
+;;-----------------------------
 (setq load-path
       (append
        (list
@@ -9,22 +9,23 @@
         )
        load-path))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Elpa ;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;-----------------------------
+;; Elpa -----------------------
+;;-----------------------------
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/elpa/")
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; auto install ;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;-----------------------------
+;; auto install ---------------
+;;-----------------------------
 (require 'cl)
 (defvar installing-package-list
   '(
     ;; package list
     auto-complete
+    csharp-mode
     dash
     git-commit-mode
     gitconfig-mode
@@ -43,18 +44,18 @@
     (dolist (pkg not-installed)
         (package-install pkg))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; init-loader ;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;-----------------------------
+;; init-loader ----------------
+;;-----------------------------
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil) ;; 起動時のログバッファを表示しない
 (init-loader-load "~/.emacs.d/init_loader")
 (if (not (equal (init-loader-error-log) ""))
     (init-loader-show-log)) ; エラーがあったときだけログバッファを表示
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Test ;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;-----------------------------
+;; Test -----------------------
+;;-----------------------------
 ;; undo-tree
 (require 'undo-tree)
 (global-undo-tree-mode t)
@@ -64,6 +65,3 @@
 ;(split-window-horizontally)
 ;(other-window 1)
 ;(split-window-vertically)
-
-;; git-commit-mode
-(require 'git-commit-mode)
