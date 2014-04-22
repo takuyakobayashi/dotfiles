@@ -34,6 +34,7 @@
     init-loader
     markdown-mode
     popup
+    powerline
     rainbow-delimiters
     smooth-scroll
     undo-tree
