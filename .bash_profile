@@ -9,7 +9,7 @@ alias cl='clear'
 alias rm='rm -i'
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
-alias em='open -a /Applications/Emacs.app/'
+function em(){ /Applications/Emacs.app/Contents/MacOS/Emacs $1 & }
 
 ####################################
 ### path ###########################
@@ -35,17 +35,17 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 ####################################
-### prompt #########################
+### prompt & powerline-shell #######
 ####################################
-export PS1='\[\e[01;36m\]\u:\[\e[0;37m\]\w \[\e[1;36m\]$(__git_ps1 "(%s)")\[\e[0m\] \n\[\e[01;35m\]\$\[\e[00m\] '
-
-####################################
-### powerline-shell ################
-####################################
-#function _update_ps1() {
-#   export PS1="$(~/powerline-shell.py $?)"
-#}
-#export PROMPT_COMMAND="_update_ps1"
+plshell_path=~/powerline-shell/powerline-shell.py
+if [ -e $plshell_path ];then
+    function _update_ps1() { 
+        export PS1="$($plshell_path $? 2> /dev/null)" 
+    }
+    export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+else
+    export PS1='\[\e[01;36m\]\u:\[\e[0;37m\]\w \[\e[1;36m\]$(__git_ps1 "(%s)")\[\e[0m\] \n\[\e[01;35m\]\$\[\e[00m\] '
+fi
 
 ####################################
 ### load setting depends env #######

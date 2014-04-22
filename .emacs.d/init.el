@@ -28,12 +28,14 @@
     csharp-mode
     dash
     git-commit-mode
+    git-gutter
     gitconfig-mode
     helm
     init-loader
     markdown-mode
     popup
     rainbow-delimiters
+    smooth-scroll
     undo-tree
     ))
 (let ((not-installed (loop for x in installing-package-list

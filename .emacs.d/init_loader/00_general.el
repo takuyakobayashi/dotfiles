@@ -3,7 +3,7 @@
 ;;-----------------------------
 ;; show number of lines
 (global-linum-mode t)
-(setq linum-format "% 3d")
+(setq linum-format "% 5d")
 ;; show full-path in menu
 (setq frame-title-format "%f")
 ;; show time
