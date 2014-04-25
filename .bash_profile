@@ -7,9 +7,13 @@ alias lal='ll -a'
 alias lla='ll -a'
 alias cl='clear'
 alias rm='rm -i'
+alias st='git status'
+
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
-function em(){ /Applications/Emacs.app/Contents/MacOS/Emacs $1 & }
+function em(){     
+    sh ~/dotfiles/launch_em.sh $1
+}
 
 ####################################
 ### path ###########################
