@@ -27,3 +27,5 @@
 ;; set auto save directory
 (setq auto-save-file-name-transforms
   `((".*", (expand-file-name "~/dotfiles/.emacs.d/auto-save-list/") t)))
+;; ignore beep
+(setq ring-bell-function 'ignore)
