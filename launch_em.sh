@@ -1,12 +1,12 @@
 #!/bin/bash
 /Applications/Emacs.app/Contents/MacOS/Emacs $1 &
- while :
- do
-     process_id=`ps | grep Emacs | grep $1 | awk '{print $1}'`
-    if [ ${#process_id} != 0 ]; then
-        break
-    fi
-done
+#  while :
+#  do
+#      process_id=`ps | grep Emacs | grep $1 | awk '{print $1}'`
+#     if [ ${#process_id} != 0 ]; then
+#         break
+#     fi
+# done
 ## 同名プロセスが複数ある場合の為にトリミング
 # process_id=`echo ${process_id} | awk '{print $1}'`
 # sleep 4s
