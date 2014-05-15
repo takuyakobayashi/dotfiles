@@ -8,6 +8,7 @@ alias lla='ll -a'
 alias cl='clear'
 alias rm='rm -i'
 alias st='git status'
+alias fe='git fetch'
 
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
