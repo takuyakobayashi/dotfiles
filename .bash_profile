@@ -9,10 +9,12 @@ alias cl='clear'
 alias rm='rm -i'
 alias st='git status'
 alias fe='git fetch'
+alias br='git branch'
+alias lo='git log'
 
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
-function em(){     
+function em(){
     sh ~/dotfiles/launch_em.sh $1
 }
 
@@ -44,8 +46,8 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 ####################################
 plshell_path=~/powerline-shell/powerline-shell.py
 if [ -e $plshell_path ];then
-    function _update_ps1() { 
-        export PS1="$($plshell_path $? 2> /dev/null)" 
+    function _update_ps1() {
+        export PS1="$($plshell_path $? 2> /dev/null)"
     }
     export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 else
