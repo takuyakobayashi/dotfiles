@@ -12,7 +12,7 @@ alias st='git status'
 alias fe='git fetch'
 alias br='git branch'
 alias lo='git log'
-alias ch='git log'
+alias ch='git checkout'
 
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
