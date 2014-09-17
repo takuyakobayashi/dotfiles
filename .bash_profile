@@ -7,10 +7,12 @@ alias lal='ll -a'
 alias lla='ll -a'
 alias cl='clear'
 alias rm='rm -i'
+## git alias(omit the input of the 'git' command)
 alias st='git status'
 alias fe='git fetch'
 alias br='git branch'
 alias lo='git log'
+alias ch='git log'
 
 alias sublime='open -a /Applications/Sublime\ Text\ 2.app/'
 alias mou='open -a /Applications/Mou.app/'
