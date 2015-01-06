@@ -9,7 +9,7 @@ alias cl='clear'
 alias rm='rm -i'
 ## git alias(omit the input of the 'git' command)
 alias st='git status'
-alias fe='git fetch'
+alias pr='git fetch --prune'
 alias br='git branch'
 alias lo='git log'
 alias ch='git checkout'
